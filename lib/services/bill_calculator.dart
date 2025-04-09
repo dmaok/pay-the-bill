@@ -6,7 +6,11 @@ class BillCalculator {
 
   BillCalculator(this._tariffService);
 
-  double calculateBill(List<CounterReading> readings, Tariff tariff, DateTime date) {
+  double calculateBill(
+    List<CounterReading> readings,
+    Tariff tariff,
+    DateTime date,
+  ) {
     if (readings.isEmpty) {
       return 0;
     }
